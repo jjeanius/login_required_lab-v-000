@@ -10,10 +10,10 @@ class SecretsController < ApplicationController
     end
 
 
-#  private
+  private
 
-#  def require_login
-#    return head(:redirection) unless session.include? :name
-#  end
+  def require_login
+    return head(:redirection) unless session.include? :name
+  end
 
 end

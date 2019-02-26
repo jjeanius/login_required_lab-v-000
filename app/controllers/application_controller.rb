@@ -4,10 +4,10 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   helper_method :current_user
 
-#  def current_user
-#    params[:name] && !params[:name].empty?
-#    params[:name] = session[:name]
-#      @name = session[:name]
-#  end
+  def current_user
+    params[:name] && !params[:name].empty?
+    params[:name] = session[:name]
+      @name = session[:name]
+  end
 
 end

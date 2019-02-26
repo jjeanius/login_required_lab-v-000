@@ -9,7 +9,7 @@ class SecretsController < ApplicationController
     if params[:name] && !params[:name].empty?
       redirect_to "/sessions/new"
     else
-      redirect_to '/secrets/new'
+      redirect_to '/secrets/show'
     end
 
   end

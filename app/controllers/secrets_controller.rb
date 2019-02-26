@@ -12,7 +12,7 @@ class SecretsController < ApplicationController
   private
 
   def require_login
-    return head(:redirect_to :sessions :new) unless session.include? :name
+    return head(:redirect_to :sessions_new) unless session.include? :name
   end
 
 end

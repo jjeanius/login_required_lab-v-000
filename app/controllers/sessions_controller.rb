@@ -16,9 +16,5 @@ class SessionsController < ApplicationController
     session.delete :name
   end
 
-  private
 
-  def require_login
-    return head(:found) unless session.include? :name
-  end
 end

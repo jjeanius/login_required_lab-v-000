@@ -6,6 +6,9 @@ class SecretsController < ApplicationController
   end
 
   def show
+    if !current_user
+      redirect_to "/sessions/new"
+    end
 
   end
 

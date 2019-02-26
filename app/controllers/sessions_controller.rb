@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     if current_user
       #params[:name] && !params[:name].empty?
       #session[:name] = params[:name]
-      #  @name = session[:name]
+        @name = session[:name]
       else
       redirect_to "/sessions/new"
     end

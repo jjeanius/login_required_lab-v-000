@@ -6,14 +6,13 @@ class SecretsController < ApplicationController
   end
 
   def show
-    return head(:redirection) unless session.include? :name
     end
 
 
   private
 
   def require_login
-    return head(:redirect) unless session.include? :name
+    return head(:redirect) unless session.include? :name :sessions :new
   end
 
 end

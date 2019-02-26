@@ -12,7 +12,7 @@ class SecretsController < ApplicationController
   private
 
   def require_login
-    return head(:multiple_choices) unless session.include? :name
+    return head(:sessions) unless session.include? :name
   end
 
 end

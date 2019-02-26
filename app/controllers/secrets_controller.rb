@@ -1,5 +1,5 @@
 class SecretsController < ApplicationController
-  before_action :require_login, only:[:new]
+  before_action :require_login
 
 
   def new
@@ -9,5 +9,9 @@ class SecretsController < ApplicationController
 
   end
 
+  private
+
+  def require_login
+    return head(:redirect) unless session.include? :username
 
 end

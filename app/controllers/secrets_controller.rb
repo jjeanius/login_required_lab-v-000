@@ -1,7 +1,7 @@
 class SecretsController < ApplicationController
   before_action :require_login, only:[:new]
   force_ssl only: :300
-force_ssl only: :cheeseburger
+
   def new
   end
 

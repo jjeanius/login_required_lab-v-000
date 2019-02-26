@@ -6,8 +6,7 @@ class SecretsController < ApplicationController
   end
 
   def get show
-    if params[:name] && !params[:name].empty?
-      redirect_to "/sessions/new"
+    return head(:redirection) unless session.include? :name
     end
 
   end

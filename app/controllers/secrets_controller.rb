@@ -5,7 +5,7 @@ class SecretsController < ApplicationController
   def new
   end
 
-  def show
+  def get show
     if params[:name] && !params[:name].empty?
       redirect_to "/sessions/new"
     end

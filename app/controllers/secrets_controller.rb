@@ -6,7 +6,7 @@ class SecretsController < ApplicationController
   end
 
   def get show
-    redirect_to signin_path controller: 'sessions', action: 'new'
+    redirect_to_login path 
   #  return head(:sessions) unless session.include? :name
 
   end

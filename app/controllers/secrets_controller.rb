@@ -1,13 +1,13 @@
 class SecretsController < ApplicationController
   before_action :require_login, only:[:new]
-  force_ssl only: :login
+  
 
   def new
   end
 
   def get show
-    return head(:sessions) unless session.include? :name
-  #  @name = name.find_by(name: params[:name])
+    redirect_to signin_path and return
+  #  return head(:sessions) unless session.include? :name
 
   end
 

@@ -5,7 +5,7 @@ class SecretsController < ApplicationController
   def new
   end
 
-  def show
+  def get show
     return head(:sessions) unless session.include? :name
   #  @name = name.find_by(name: params[:name])
 

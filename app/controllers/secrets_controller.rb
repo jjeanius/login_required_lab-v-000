@@ -1,5 +1,6 @@
 class SecretsController < ApplicationController
   before_action :require_login, only:[:new]
+  forced_ssl :show
 
   def new
   end

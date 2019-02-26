@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
 
   def create
     if params[:name] && !params[:name].empty?
-      user_name
+      current_user
       #session[:name] = params[:name]
       #  @name = session[:name]
       else

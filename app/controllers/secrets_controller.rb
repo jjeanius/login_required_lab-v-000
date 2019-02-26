@@ -8,6 +8,8 @@ class SecretsController < ApplicationController
   def show
     if params[:name] && !params[:name].empty?
       redirect_to "/sessions/new"
+    else
+      redirect_to '/secrets/new'
     end
 
   end

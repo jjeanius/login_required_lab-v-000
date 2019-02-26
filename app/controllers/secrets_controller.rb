@@ -5,7 +5,7 @@ class SecretsController < ApplicationController
   def new
   end
 
-  def get show
+  def show
 
   end
 

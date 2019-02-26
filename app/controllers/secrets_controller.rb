@@ -7,8 +7,6 @@ class SecretsController < ApplicationController
 
   def get show
     redirect_to_login path
-  #  return head(:sessions) unless session.include? :name
-
   end
 
 
